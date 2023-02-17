@@ -1,0 +1,25 @@
+{
+  "name": "ut6-diw-dise-o2d-sonido-y-video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "clean": "rimraf dist .cache .cache-loader .parcel-cache",
+    
+    "dev": "npm-run-all clean start",
+    "buildClean": "npm-run-all clean build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanrabaro/ut6-diw-dise-o2D-sonido-y-video.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanrabaro/ut6-diw-dise-o2D-sonido-y-video/issues"
+  },
+  "homepage": "https://github.com/juanrabaro/ut6-diw-dise-o2D-sonido-y-video#readme"
+}
