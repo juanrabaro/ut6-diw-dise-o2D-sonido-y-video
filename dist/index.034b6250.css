@@ -9,4 +9,44 @@ body {
   margin: 0;
 }
 
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  padding-top: 1px;
+  position: relative;
+}
+
+.header .header__titulo {
+  text-align: center;
+}
+
+.header .header__logo {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+.main .main__funcionamiento, .main .main__personajes, .main .main__escenarios, .main .main__multimedia {
+  background-color: #00f;
+  border: 1px solid #000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #000;
+  padding-bottom: 1px;
+  position: sticky;
+}
+
 /*# sourceMappingURL=index.034b6250.css.map */

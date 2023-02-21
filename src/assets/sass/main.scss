@@ -8,3 +8,61 @@ body {
     width: 100%;
     background-color: grey;
 }
+
+.header {
+    background-color: red;
+    width: 100%;
+    padding-top: 1px;
+    position: relative;
+    height: 100px;
+
+    .header__titulo {
+        text-align: center;
+        
+    }
+    .header__logo {
+        position: absolute;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .main__funcionamiento {
+        background-color: blue;
+        border: 1px solid black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .main__personajes {
+        background-color: blue;
+        border: 1px solid black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .main__escenarios {
+        background-color: blue;
+        border: 1px solid black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .main__multimedia {
+        background-color: blue;
+        border: 1px solid black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    padding-bottom: 1px;
+    position: sticky;
+}
