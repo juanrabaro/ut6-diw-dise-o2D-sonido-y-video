@@ -1,0 +1,27 @@
+.header {
+    background-color: $rojo;
+    width: 100%;
+    
+    position: relative;
+    height: 100px;
+
+    .header__logo {
+        position: absolute;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        left: 15px;
+        top: 30px;
+        height: 50px;
+    }
+    .header__navegador {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        padding-top: 40px;
+
+        button {
+            
+            color: black;
+        }
+    }
+}

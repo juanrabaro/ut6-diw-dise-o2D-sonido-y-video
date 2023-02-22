@@ -1,0 +1,26 @@
+.main {
+    width: 100%;
+
+    .main__titulo {
+        text-align: center;   
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .main__principal {
+        display: flex;
+        flex-direction: column;
+    
+        .principal__funcionamiento {
+            @include main-sections;
+        }
+        .principal__personajes {
+            @include main-sections;
+        }
+        .principal__escenarios {
+            @include main-sections;
+        }
+        .principal__multimedia {
+            @include main-sections;
+        }
+    }
+}

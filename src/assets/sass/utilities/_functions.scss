@@ -1,0 +1,12 @@
+@mixin main-sections {
+    background-color: rgb(78, 78, 255);
+    border: 1px solid black;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    height: 300px;
+
+    h2 {
+        text-align: center;
+        margin-top: 0px;
+    }
+}
