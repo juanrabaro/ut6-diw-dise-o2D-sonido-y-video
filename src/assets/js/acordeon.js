@@ -1,17 +1,29 @@
-'use strict';
 
-
-const bloque = document.querySelectorAll('.acordeon__bloque');
-const h3 = document.querySelectorAll('.bloque__h3');
-console.log('hello world!');
-
-h3.forEach( (cadaH3, i) => {
-    h3[i].addEventListener('click', () => {
-
-        bloque.forEach( (cadaBloque, i) => {
-            bloque[i].classList.remove('activo');
-        })
-        bloque[i].classList.add('activo');
+function acordeon() {
+    const acordeon1 = document.getElementById("acordeon1")
+    const acordeon2 = document.getElementById("acordeon2")
+    const acordeon3 = document.getElementById("acordeon3")
+    document.getElementById("acordeon1").onclick = function() {
+        console.log("acordeon1")
+        acordeon2.classList.remove("activo")
+        acordeon3.classList.remove("activo")
         
-    })
-})
+        acordeon1.classList.toggle("activo")
+    }
+
+    document.getElementById("acordeon2").onclick = function() {
+        console.log("acordeon2")
+        acordeon1.classList.remove("activo")
+        acordeon3.classList.remove("activo")
+        
+        acordeon2.classList.toggle("activo")
+    }
+
+    document.getElementById("acordeon3").onclick = function() {
+        console.log("acordeon3")
+        acordeon1.classList.remove("activo")
+        acordeon2.classList.remove("activo")
+        
+        acordeon3.classList.toggle("activo")
+    }
+}
