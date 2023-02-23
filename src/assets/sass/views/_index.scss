@@ -47,6 +47,37 @@
         }
         .principal__personajes {
             @include main-sections;
+            
+            .personajes__contenedor {
+                width: 90%;
+                max-width: 120em;
+                background-color: lightgray;
+                padding: 1em;
+            }
+            .personajes__contenedor .contenedor__ul {
+                width: 100%;
+                background-color: lightblue;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content : flex-start;
+                align-items: center;
+            }
+            .personajes__contenedor .ul__li {
+                background-color: lightgreen;
+                padding: lem;
+                margin:0 lem 0 0;
+            }
+            .personajes__contenedor .contenedor__subcontenedor {
+                background-color: lightsalmon;
+                position: relative;
+            }
+            .personajes__contenedor .subcontenedor__bloque {
+                background-color: lightseagreen;
+                margin: 1em;
+                padding: 1em;
+                position: absolute;
+                top: 0;
+            }
         }
         .principal__escenarios {
             @include main-sections;

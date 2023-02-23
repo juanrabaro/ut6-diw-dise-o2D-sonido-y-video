@@ -72,6 +72,41 @@ body {
   margin-top: 0;
 }
 
+.main .main__principal .principal__personajes .personajes__contenedor {
+  width: 90%;
+  max-width: 120em;
+  background-color: #d3d3d3;
+  padding: 1em;
+}
+
+.main .main__principal .principal__personajes .personajes__contenedor .contenedor__ul {
+  width: 100%;
+  background-color: #add8e6;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.main .main__principal .principal__personajes .personajes__contenedor .ul__li {
+  padding: lem;
+  margin: 0 lem 0 0;
+  background-color: #90ee90;
+}
+
+.main .main__principal .principal__personajes .personajes__contenedor .contenedor__subcontenedor {
+  background-color: #ffa07a;
+  position: relative;
+}
+
+.main .main__principal .principal__personajes .personajes__contenedor .subcontenedor__bloque {
+  background-color: #20b2aa;
+  margin: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 0;
+}
+
 .main .main__principal .principal__escenarios {
   background-color: #4e4eff;
   border: 1px solid #000;
