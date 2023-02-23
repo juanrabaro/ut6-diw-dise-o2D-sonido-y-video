@@ -10,6 +10,7 @@
         display: flex;
         flex-direction: column;
     
+        // ACORDEON
         .principal__funcionamiento {
             @include main-sections;
             
@@ -45,6 +46,9 @@
                 height: 4em
             }
         }
+
+
+        //TABS
         .principal__personajes {
             @include main-sections;
             
@@ -92,9 +96,17 @@
                 opacity: 1;
             }
         }
+
+
+        //CARRUSEL
         .principal__escenarios {
             @include main-sections;
+
+            
         }
+
+
+        //NO HE
         .principal__multimedia {
             @include main-sections;
         }
