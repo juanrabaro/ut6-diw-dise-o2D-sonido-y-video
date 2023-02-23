@@ -102,7 +102,46 @@
         .principal__escenarios {
             @include main-sections;
 
-            
+            .escenarios__carrusel {
+                width: 90%;
+                max-width: 120em;
+                padding: 2em;
+            }
+            .escenarios__carrusel .carrusel__grande {
+                width: 400%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2em;
+
+                transition: all .5s ease;
+                transform: translateX(0%);
+            }
+            .escenarios__carrusel .grande__img {
+                width: calc(100% / 4);
+                min-height: 10vh;
+                border: 1px solid black;
+            }
+            .escenarios__carrusel .carrusel__puntos {
+                width: 100%;
+                padding: .4em;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                list-style: none;
+                margin: 1em 0 0;
+            }
+            .escenarios__carrusel .puntos__punto {
+                width: 2em;
+                height: 2em;
+                margin: 1em 1em 0;
+                border: 1px solid black;
+            }
+            .escenarios__carrusel .puntos__punto.activo {
+                background-color: orange
+            }
         }
 
 

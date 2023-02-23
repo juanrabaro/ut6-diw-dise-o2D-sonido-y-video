@@ -129,6 +129,51 @@ body {
   margin-top: 0;
 }
 
+.main .main__principal .principal__escenarios .escenarios__carrusel {
+  width: 90%;
+  max-width: 120em;
+  padding: 2em;
+}
+
+.main .main__principal .principal__escenarios .escenarios__carrusel .carrusel__grande {
+  width: 400%;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  transition: all .5s;
+  display: flex;
+  transform: translateX(0%);
+}
+
+.main .main__principal .principal__escenarios .escenarios__carrusel .grande__img {
+  width: 25%;
+  min-height: 10vh;
+  border: 1px solid #000;
+}
+
+.main .main__principal .principal__escenarios .escenarios__carrusel .carrusel__puntos {
+  width: 100%;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1em 0 0;
+  padding: .4em;
+  list-style: none;
+  display: flex;
+}
+
+.main .main__principal .principal__escenarios .escenarios__carrusel .puntos__punto {
+  width: 2em;
+  height: 2em;
+  border: 1px solid #000;
+  margin: 1em 1em 0;
+}
+
+.main .main__principal .principal__escenarios .escenarios__carrusel .puntos__punto.activo {
+  background-color: orange;
+}
+
 .main .main__principal .principal__multimedia {
   background-color: #4e4eff;
   border: 1px solid #000;
