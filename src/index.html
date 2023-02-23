@@ -4,6 +4,7 @@
   <title>Proyecto2D</title>
   <link rel="stylesheet" href="/src/assets/sass/main.scss">
   <script src="/src/assets/js/acordeon.js"></script>
+  <script src="/src/assets/js/tabs.js"></script>
 </head>
 <body>
   <header class="header">
@@ -18,6 +19,9 @@
   <main class="main">
     <h1 class="main__titulo">TITULO JUEGO</h1>
     <div class="main__principal">
+
+
+      <!-- ACORDEON -->
       <section id="principal__funcionamiento" class="principal__funcionamiento">
         <h2>funcionamiento juego(acordeon)</h2>
         <div class="funcionamiento__acordeon">
@@ -35,30 +39,39 @@
           </div>
         </div>
       </section>
+
+
+      <!-- TABS -->
       <section id="principal__personajes" class="principal__personajes">
         <h2>personajes(tabs)</h2>
         <div class="personajes__contenedor">
           <ul class="contenedor__ul">
-            <li class="ul__li">boton 1</li>
-            <li class="ul__li">boton 2</li>
-            <li class="ul__li">boton 3</li>
+            <li class="ul__li" id="li1" onclick="tabs()">boton 1</li>
+            <li class="ul__li" id="li2" onclick="tabs()">boton 2</li>
+            <li class="ul__li" id="li3" onclick="tabs()">boton 3</li>
           </ul>
           <div class="contenedor__subcontenedor">
-            <div class="subcontenedor__bloque">
-              personaje
+            <div class="subcontenedor__bloque" id="bloquetabs1">
+              <img src="/src/assets/imagenes/boss.png" alt="prueba">
             </div>
-            <div class="subcontenedor__bloque">
-              personaje
+            <div class="subcontenedor__bloque" id="bloquetabs2">
+              <img src="/src/assets/imagenes/boss.png" alt="prueba">
             </div>
-            <div class="subcontenedor__bloque">
-              personaje
+            <div class="subcontenedor__bloque" id="bloquetabs3">
+              <img src="/src/assets/imagenes/boss.png" alt="prueba">
             </div>
           </div>
         </div>
       </section>
+
+
+      <!-- CARRUSEL -->
       <section id="principal__escenarios" class="principal__escenarios">
         <h2>escenarios(carrusel)</h2>
       </section>
+
+
+      <!-- NO HE -->
       <section id="principal__multimedia" class="principal__multimedia">
         <h2>video y audios</h2>
       </section>

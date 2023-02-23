@@ -51,33 +51,45 @@
             .personajes__contenedor {
                 width: 90%;
                 max-width: 120em;
-                background-color: lightgray;
+                //background-color: lightgray;
                 padding: 1em;
             }
             .personajes__contenedor .contenedor__ul {
                 width: 100%;
-                background-color: lightblue;
+                //background-color: lightblue;
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content : flex-start;
                 align-items: center;
             }
             .personajes__contenedor .ul__li {
-                background-color: lightgreen;
-                padding: lem;
-                margin:0 lem 0 0;
+                //background-color: lightgreen;
+                padding: 1em;
+                margin:0 1em 0 0;
+                border: 1px solid black;
+                list-style: none;
+                transition: all .5s ease;
+            }
+            .personajes__contenedor .ul__li.activo {
+                background-color: lightskyblue;
+                color: white;
             }
             .personajes__contenedor .contenedor__subcontenedor {
                 min-height: 10vh;
-                background-color: lightsalmon;
+                //background-color: lightsalmon;
                 position: relative;
             }
             .personajes__contenedor .subcontenedor__bloque {
-                background-color: lightseagreen;
+                //background-color: lightseagreen;
+                opacity: 0;
                 margin: 1em;
                 padding: 1em;
                 position: absolute;
-                top: 0;
+                top: 2em;
+                transition: all .5s ease;
+            }
+            .personajes__contenedor .subcontenedor__bloque.activo {
+                opacity: 1;
             }
         }
         .principal__escenarios {
