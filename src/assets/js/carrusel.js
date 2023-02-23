@@ -1,11 +1,13 @@
+var grande = document.getElementsByClassName("carrusel__grande")
+console.log(grande)
 
-function a() {
-    console.log("fufa")
-    const grande    = document.getElementById("carrusel__grande")
-    const punto1     = document.getElementById("puntos__punto1")
-    const punto2     = document.getElementById("puntos__punto2")
-    const punto3     = document.getElementById("puntos__punto3")
-    const punto4     = document.getElementById("puntos__punto4")
+
+function carrusel(grande) {
+    //const grande = document.getElementById("carrusel__grande")
+    const punto1 = document.getElementById("puntos__punto1")
+    const punto2 = document.getElementById("puntos__punto2")
+    const punto3 = document.getElementById("puntos__punto3")
+    const punto4 = document.getElementById("puntos__punto4")
 
     console.log(grande)
     console.log(punto1)
@@ -13,12 +15,16 @@ function a() {
     console.log(punto3)
     console.log(punto4)
 
+
+    punto1.onclick = () => {
+        grande.style.transform = `translateX(-25%)`
+    }
     // Cuando CLICK en punto
         // Saber la posición de ese punto
         // Aplicar un transform translateX al grande
         // QUITAR la clase activo de TODOS puntos
         // AÑADIR la clase activo al punto que hemos hecho CLICK
-
+/* 
     // Recorrer TODOS los punto
     punto1.forEach( ( cadaPunto , i )=> {
         // Asignamos un CLICK a cadaPunto
@@ -41,5 +47,5 @@ function a() {
             punto1[i].classList.add('activo')
 
         })
-    })
+    }) */
 }
