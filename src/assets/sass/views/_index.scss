@@ -13,33 +13,39 @@
         // ACORDEON
         .principal__funcionamiento {
             @include main-sections;
+            height: 520px;
             
             .funcionamiento__acordeon {
-                width: 90%;
-                max-width: 120em;
+                //width: 90%;
+                //max-width: 120em;
                 //background-color: lightblue;
-                padding: 2em;
-                //@include neo(1, 1em, 1em);
+                padding-top: 30px;
+                padding-left: 1em;
+                padding-right: 1em;
             }
             .funcionamiento__acordeon .acordeon__bloque {
                 //background-color: red;
-                margin: 0 0 1em;
+                //margin: 0 0 1em;
                 padding: 1em;
-                border: 1px solid black;
+                //border: 1px solid black;
             }
             .funcionamiento__acordeon .bloque__h3 {
                 //background-color: lime;
                 margin: 0 0 1em;
                 padding: 1em;
                 border: 1px solid black;
+                border-radius: 20px;
+                cursor: pointer;
+                text-align: center;
             }
             .funcionamiento__acordeon .bloque__contenido {
                 //background-color: orange;
                 height: 0;
                 padding: 0em;
                 overflow: hidden;
-                border: 1px solid black;
+                //border: 1px solid black;
                 transition: all .5s ease;
+                text-align: center;
             }
         
             .funcionamiento__acordeon .acordeon__bloque.activo .bloque__contenido {
@@ -73,6 +79,8 @@
                 border: 1px solid black;
                 list-style: none;
                 transition: all .5s ease;
+                width: 200px;
+                text-align: center;
             }
             .personajes__contenedor .ul__li.activo {
                 background-color: lightskyblue;

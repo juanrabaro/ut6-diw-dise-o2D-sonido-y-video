@@ -26,6 +26,7 @@ body {
 }
 
 .main .main__principal .principal__funcionamiento {
+  height: 520px;
   background-color: #4e4eff;
   border: 1px solid #000;
   padding-top: 30px;
@@ -38,20 +39,27 @@ body {
 }
 
 .main .main__principal .principal__funcionamiento .funcionamiento__acordeon {
-  width: 90%;
-  max-width: 120em;
-  padding: 2em;
+  padding-top: 30px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.main .main__principal .principal__funcionamiento .funcionamiento__acordeon .acordeon__bloque, .main .main__principal .principal__funcionamiento .funcionamiento__acordeon .bloque__h3 {
+.main .main__principal .principal__funcionamiento .funcionamiento__acordeon .acordeon__bloque {
+  padding: 1em;
+}
+
+.main .main__principal .principal__funcionamiento .funcionamiento__acordeon .bloque__h3 {
+  cursor: pointer;
+  text-align: center;
   border: 1px solid #000;
+  border-radius: 20px;
   margin: 0 0 1em;
   padding: 1em;
 }
 
 .main .main__principal .principal__funcionamiento .funcionamiento__acordeon .bloque__contenido {
   height: 0;
-  border: 1px solid #000;
+  text-align: center;
   padding: 0;
   transition: all .5s;
   overflow: hidden;
@@ -88,6 +96,8 @@ body {
 }
 
 .main .main__principal .principal__personajes .personajes__contenedor .ul__li {
+  width: 200px;
+  text-align: center;
   border: 1px solid #000;
   margin: 0 1em 0 0;
   padding: 1em;
