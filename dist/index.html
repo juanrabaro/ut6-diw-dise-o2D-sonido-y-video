@@ -7,7 +7,7 @@
   <script src="/index.a5fb9f2e.js"></script>
   <script src="/index.4758f6af.js"></script>
 </head>
-<body>
+<body onload="carrusel(), tabs()">
   <header class="header">
     <img src="/boss.a6471aa3.png" class="header__logo">
     <nav class="header__navegador">
@@ -47,9 +47,9 @@
         <h2>personajes(tabs)</h2>
         <div class="personajes__contenedor">
           <ul class="contenedor__ul">
-            <li class="ul__li activo" id="li1" onclick="tabs()">boton 1</li>
-            <li class="ul__li" id="li2" onclick="tabs()">boton 2</li>
-            <li class="ul__li" id="li3" onclick="tabs()">boton 3</li>
+            <li class="ul__li activo" id="li1">boton 1</li>
+            <li class="ul__li" id="li2">boton 2</li>
+            <li class="ul__li" id="li3">boton 3</li>
           </ul>
           <div class="contenedor__subcontenedor">
             <div class="subcontenedor__bloque activo" id="bloquetabs1">
@@ -81,10 +81,10 @@
           </div>
 
           <ul class="carrusel__puntos">
-            <li class="puntos__punto activo" id="puntos__punto1" onclick="carrusel()"></li>
-            <li class="puntos__punto" id="puntos__punto2" onclick="carrusel()"></li>
-            <li class="puntos__punto" id="puntos__punto3" onclick="carrusel()"></li>
-            <li class="puntos__punto" id="puntos__punto4" onclick="carrusel()"></li>
+            <li class="puntos__punto activo" id="puntos__punto1"></li>
+            <li class="puntos__punto" id="puntos__punto2"></li>
+            <li class="puntos__punto" id="puntos__punto3"></li>
+            <li class="puntos__punto" id="puntos__punto4"></li>
           </ul>
         </div>
       </section>

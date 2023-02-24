@@ -1,51 +1,41 @@
-var grande = document.getElementsByClassName("carrusel__grande")
-console.log(grande)
 
-
-function carrusel(grande) {
-    //const grande = document.getElementById("carrusel__grande")
+function carrusel() {
     const punto1 = document.getElementById("puntos__punto1")
     const punto2 = document.getElementById("puntos__punto2")
     const punto3 = document.getElementById("puntos__punto3")
     const punto4 = document.getElementById("puntos__punto4")
-
-    console.log(grande)
-    console.log(punto1)
-    console.log(punto2)
-    console.log(punto3)
-    console.log(punto4)
-
+    const grande = document.getElementById("carrusel__grande")
 
     punto1.onclick = () => {
-        grande.style.transform = `translateX(-25%)`
+        grande.style.transform = `translateX(0%)`
+        punto2.classList.remove("activo")
+        punto3.classList.remove("activo")
+        punto4.classList.remove("activo")
+
+        punto1.classList.toggle("activo")
     }
-    // Cuando CLICK en punto
-        // Saber la posición de ese punto
-        // Aplicar un transform translateX al grande
-        // QUITAR la clase activo de TODOS puntos
-        // AÑADIR la clase activo al punto que hemos hecho CLICK
-/* 
-    // Recorrer TODOS los punto
-    punto1.forEach( ( cadaPunto , i )=> {
-        // Asignamos un CLICK a cadaPunto
-        punto1[i].addEventListener('click',()=>{
+    punto2.onclick = () => {
+        grande.style.transform = `translateX(-25%)`
+        punto1.classList.remove("activo")
+        punto3.classList.remove("activo")
+        punto4.classList.remove("activo")
 
-            // Guardar la posición de ese PUNTO
-            let posicion  = i
-            // Calculando el espacio que debe DESPLAZARSE el GRANDE
-            let operacion = posicion * -50
+        punto2.classList.toggle("activo")
+    }
+    punto3.onclick = () => {
+        grande.style.transform = `translateX(-50%)`
+        punto1.classList.remove("activo")
+        punto2.classList.remove("activo")
+        punto4.classList.remove("activo")
 
-            // MOVEMOS el grand
-            grande.style.transform = `translateX(${ operacion }%)`
+        punto3.classList.toggle("activo")
+    }
+    punto4.onclick = () => {
+        grande.style.transform = `translateX(-75%)`
+        punto1.classList.remove("activo")
+        punto2.classList.remove("activo")
+        punto3.classList.remove("activo")
 
-            // Recorremos TODOS los punto
-            punto1.forEach( ( cadaPunto , i )=>{
-                // Quitamos la clase ACTIVO a TODOS los punto
-                punto1[i].classList.remove('activo')
-            })
-            // Añadir la clase activo en el punto que hemos hecho CLICK
-            punto1[i].classList.add('activo')
-
-        })
-    }) */
+        punto4.classList.toggle("activo")
+    }
 }
