@@ -57,6 +57,7 @@
         //TABS
         .principal__personajes {
             @include main-sections;
+            width: 100%;
             
             .personajes__contenedor {
                 width: 100%;
@@ -90,8 +91,10 @@
                 color: white;
             }
             .personajes__contenedor .contenedor__subcontenedor {
-                min-height: 10vh;
+                //min-height: 10vh;
                 //background-color: lightsalmon;
+                //height: 50px;
+                width: 100%;
                 position: relative;
             }
             .personajes__contenedor .subcontenedor__bloque {
