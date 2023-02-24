@@ -63,13 +63,15 @@
                 max-width: 120em;
                 //background-color: lightgray;
                 padding: 1em;
+                display: block;
+                margin: 0 auto;
             }
             .personajes__contenedor .contenedor__ul {
                 width: 100%;
                 //background-color: lightblue;
                 display: flex;
                 flex-flow: row nowrap;
-                justify-content : flex-start;
+                justify-content : center;
                 align-items: center;
             }
             .personajes__contenedor .ul__li {
@@ -81,6 +83,7 @@
                 transition: all .5s ease;
                 width: 200px;
                 text-align: center;
+                cursor: pointer;
             }
             .personajes__contenedor .ul__li.activo {
                 background-color: lightskyblue;
@@ -94,10 +97,11 @@
             .personajes__contenedor .subcontenedor__bloque {
                 //background-color: lightseagreen;
                 opacity: 0;
-                margin: 1em;
-                padding: 1em;
+                margin: 0;
+                padding: 0;
                 position: absolute;
-                top: 2em;
+                top: 0;
+                left: 47%;
                 transition: all .5s ease;
             }
             .personajes__contenedor .subcontenedor__bloque.activo {
