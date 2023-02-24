@@ -19,9 +19,12 @@
         justify-content: center;
         padding-top: 40px;
 
-        button {
-            
-            color: black;
+        a {
+            border: 1px black solid;
+            border-radius: 20px;
+            background-color: gray;
+            padding: 5px;
+            text-decoration: none;
         }
     }
 }
