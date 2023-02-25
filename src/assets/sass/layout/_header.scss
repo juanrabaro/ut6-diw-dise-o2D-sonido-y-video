@@ -21,10 +21,15 @@
 
         a {
             border: 1px black solid;
-            border-radius: 20px;
+            border-radius: 10px;
             background-color: gray;
-            padding: 5px;
+            padding: 8px;
             text-decoration: none;
+            box-shadow: 2px 2px black;
+        }
+        a:hover {
+            background-color: $amarillo;
+            transition: all .4s ease;
         }
     }
 }

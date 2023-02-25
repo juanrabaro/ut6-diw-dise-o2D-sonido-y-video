@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
-  color: #fff;
+  color: #000;
 }
 
 body {
   width: 100%;
-  background-color: #b3b1b1;
+  background-color: #b04747;
   margin: 0;
   overflow-x: hidden;
 }
@@ -16,8 +16,11 @@ body {
 
 .main .main__titulo {
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  border-top: 4px solid #000;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .main .main__principal {
@@ -28,8 +31,9 @@ body {
 .main .main__principal .principal__funcionamiento {
   width: 100%;
   height: 520px;
-  background-color: #b3b1b1;
-  border: 1px solid #000;
+  background-color: #cacaca;
+  border: 4px solid #000;
+  border-width: 4px 1px;
   padding-top: 30px;
   padding-bottom: 50px;
 }
@@ -52,10 +56,17 @@ body {
 .main .main__principal .principal__funcionamiento .funcionamiento__acordeon .bloque__h3 {
   cursor: pointer;
   text-align: center;
+  background-color: #b04747;
   border: 1px solid #000;
   border-radius: 20px;
   margin: 0 0 1em;
   padding: 1em;
+  box-shadow: 2px 2px 5px #000;
+}
+
+.main .main__principal .principal__funcionamiento .funcionamiento__acordeon .bloque__h3:hover {
+  background-color: #d9d949;
+  transition: all .4s;
 }
 
 .main .main__principal .principal__funcionamiento .funcionamiento__acordeon .bloque__contenido {
@@ -73,8 +84,10 @@ body {
 .main .main__principal .principal__personajes {
   width: 100%;
   width: 100%;
-  background-color: #b3b1b1;
+  height: 250px;
+  background-color: #cacaca;
   border: 1px solid #000;
+  border-bottom-width: 4px;
   padding-top: 30px;
   padding-bottom: 50px;
 }
@@ -86,17 +99,10 @@ body {
 
 .main .main__principal .principal__personajes .personajes__contenedor {
   width: 100%;
-  max-width: 120em;
-  margin: 0 auto;
-  padding: 1em;
-  display: block;
 }
 
 .main .main__principal .principal__personajes .personajes__contenedor .contenedor__ul {
   width: 100%;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
   display: flex;
 }
 
@@ -104,16 +110,18 @@ body {
   width: 400px;
   text-align: center;
   cursor: pointer;
+  background-color: #b04747;
   border: 1px solid #000;
-  margin: 0 1em 0 0;
+  border-radius: 20px;
+  margin-right: 40px;
   padding: 1em;
   list-style: none;
   transition: all .5s;
+  box-shadow: 2px 2px 5px #000;
 }
 
 .main .main__principal .principal__personajes .personajes__contenedor .ul__li.activo {
-  color: #fff;
-  background-color: #87cefa;
+  background-color: #d9d949;
 }
 
 .main .main__principal .principal__personajes .personajes__contenedor .contenedor__subcontenedor {
@@ -133,12 +141,14 @@ body {
 
 .main .main__principal .principal__personajes .personajes__contenedor .subcontenedor__bloque.activo {
   opacity: 1;
+  margin-left: -30px;
 }
 
 .main .main__principal .principal__escenarios {
   width: 100%;
-  background-color: #b3b1b1;
+  background-color: #cacaca;
   border: 1px solid #000;
+  border-bottom-width: 4px;
   padding-top: 30px;
   padding-bottom: 50px;
 }
@@ -173,7 +183,7 @@ body {
 
 .main .main__principal .principal__escenarios .escenarios__carrusel .carrusel__puntos {
   width: 100%;
-  background-color: gray;
+  background-color: #b04747;
   border: 2px solid #000;
   border-radius: 20px;
   flex-flow: row;
@@ -185,6 +195,7 @@ body {
   padding-right: 30px;
   list-style: none;
   display: flex;
+  box-shadow: 2px 2px 5px #000;
 }
 
 .main .main__principal .principal__escenarios .escenarios__carrusel .puntos__punto {
@@ -196,13 +207,14 @@ body {
 }
 
 .main .main__principal .principal__escenarios .escenarios__carrusel .puntos__punto.activo {
-  background-color: orange;
+  background-color: #d9d949;
 }
 
 .main .main__principal .principal__multimedia {
   width: 100%;
-  background-color: #b3b1b1;
+  background-color: #cacaca;
   border: 1px solid #000;
+  border-bottom-width: 4px;
   padding-top: 30px;
   padding-bottom: 50px;
 }
@@ -238,9 +250,15 @@ body {
 .header .header__navegador a {
   background-color: gray;
   border: 1px solid #000;
-  border-radius: 20px;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 8px;
   text-decoration: none;
+  box-shadow: 2px 2px #000;
+}
+
+.header .header__navegador a:hover {
+  background-color: #d9d949;
+  transition: all .4s;
 }
 
 .footer {
@@ -249,6 +267,10 @@ body {
   margin-top: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.footer .footer__logo {
+  height: 100px;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */

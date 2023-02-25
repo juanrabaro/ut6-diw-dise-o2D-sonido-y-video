@@ -3,8 +3,11 @@
 
     .main__titulo {
         text-align: center;   
-        margin-top: 70px;
-        margin-bottom: 70px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        border-top: 4px solid black;
     }
     .main__principal {
         display: flex;
@@ -14,6 +17,8 @@
         .principal__funcionamiento {
             @include main-sections;
             height: 520px;
+            border-top: 4px solid black;
+            border-bottom: 4px solid black;
             
             .funcionamiento__acordeon {
                 //width: 90%;
@@ -30,13 +35,18 @@
                 //border: 1px solid black;
             }
             .funcionamiento__acordeon .bloque__h3 {
-                //background-color: lime;
+                background-color: $rojo;
                 margin: 0 0 1em;
                 padding: 1em;
                 border: 1px solid black;
                 border-radius: 20px;
                 cursor: pointer;
                 text-align: center;
+                box-shadow: 2px 2px 5px black;
+            }
+            .funcionamiento__acordeon .bloque__h3:hover {
+                background-color: $amarillo;
+                transition: all .4s ease;
             }
             .funcionamiento__acordeon .bloque__contenido {
                 //background-color: orange;
@@ -58,37 +68,43 @@
         .principal__personajes {
             @include main-sections;
             width: 100%;
+            height: 250px;
+            border-bottom: 4px solid black;
             
             .personajes__contenedor {
                 width: 100%;
-                max-width: 120em;
+                //max-width: 120em;
                 //background-color: lightgray;
-                padding: 1em;
-                display: block;
-                margin: 0 auto;
+                
+                //padding: 1em;
+                //display: block;
+                //margin: 0 auto;
             }
             .personajes__contenedor .contenedor__ul {
                 width: 100%;
                 //background-color: lightblue;
                 display: flex;
-                flex-flow: row nowrap;
-                justify-content : space-between;
-                align-items: center;
+                //flex-flow: row nowrap;
+                //justify-content : space-between;
+                //align-items: center;
             }
             .personajes__contenedor .ul__li {
-                //background-color: lightgreen;
+                background-color: $rojo;
                 padding: 1em;
-                margin:0 1em 0 0;
+                //margin:0 1em 0 0;
+                margin-right: 40px;
                 border: 1px solid black;
+                border-radius: 20px;
                 list-style: none;
                 transition: all .5s ease;
                 width: 400px;
                 text-align: center;
                 cursor: pointer;
+                box-shadow: 2px 2px 5px black;
             }
             .personajes__contenedor .ul__li.activo {
-                background-color: lightskyblue;
-                color: white;
+                background-color: $amarillo;
+                //color: white;
             }
             .personajes__contenedor .contenedor__subcontenedor {
                 //min-height: 10vh;
@@ -109,6 +125,7 @@
             }
             .personajes__contenedor .subcontenedor__bloque.activo {
                 opacity: 1;
+                margin-left: -30px;
             }
         }
 
@@ -116,6 +133,7 @@
         //CARRUSEL
         .principal__escenarios {
             @include main-sections;
+            border-bottom: 4px solid black;
 
             .escenarios__carrusel {
                 //width: 90%;
@@ -155,7 +173,8 @@
                 padding-top: 5px;
                 padding-bottom: 5px;
                 padding-right: 30px;
-                background-color: gray;
+                background-color: $rojo;
+                box-shadow: 2px 2px 5px black;
             }
             .escenarios__carrusel .puntos__punto {
                 width: 2em;
@@ -166,7 +185,7 @@
                 cursor: pointer;
             }
             .escenarios__carrusel .puntos__punto.activo {
-                background-color: orange
+                background-color: $amarillo;
             }
         }
 
@@ -174,6 +193,7 @@
         //NO HE
         .principal__multimedia {
             @include main-sections;
+            border-bottom: 4px solid black;
         }
     }
 }
