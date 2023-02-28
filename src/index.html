@@ -6,10 +6,20 @@
   <script src="/src/assets/js/acordeon.js"></script>
   <script src="/src/assets/js/tabs.js"></script>
   <script src="/src/assets/js/carrusel.js"></script>
+
+  <!-- Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+
+  <!-- Fredoka One -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 <body onload="carrusel(), tabs()">
   <header class="header">
-    <img src="./assets/imagenes/logo/EB_logo_png.png" class="header__logo" />
+    <img src="./assets/images/logo/EB_logo_png.png" class="header__logo" />
     <nav class="header__navegador">
       <a href="#principal__funcionamiento">Funcionamiento</a>
       <a href="#principal__personajes">Personajes</a>
@@ -53,15 +63,15 @@
           </ul>
           <div class="contenedor__subcontenedor">
             <div class="subcontenedor__bloque activo" id="bloquetabs1">
-              <img src="/src/assets/imagenes/personajes/personaje-principal-primer-formato.png" alt="prueba">
+              <img src="/src/assets/images/personajes/personaje-principal-primer-formato.png" alt="prueba" class="bloque__comun">
               <p>Este es el personaje principal o protagonista del juego, el cual deberemos de controlar.</p>
             </div>
             <div class="subcontenedor__bloque" id="bloquetabs2">
-              <img src="/src/assets/imagenes/personajes/personaje2.png" alt="prueba">
+              <img src="/src/assets/images/personajes/personaje2.png" alt="prueba" class="bloque__acompañante">
               <p>Este será nuestro acompañante durante los distintos niveles.</p>
             </div>
             <div class="subcontenedor__bloque" id="bloquetabs3">
-              <img src="/src/assets/imagenes/personajes/boss.png" alt="prueba">
+              <img src="/src/assets/images/personajes/boss.png" alt="prueba" class="bloque__comun">
               <p>Este es el jefe final al que deberemos de hacer frente en el último y más díficil nivel del juego.</p>
             </div>
           </div>
@@ -74,10 +84,10 @@
         <h2>LOS ESCENARIOS</h2>
         <div class="escenarios__carrusel">
           <div class="carrusel__grande" id="carrusel__grande">
-            <img  alt="Imagen 1" class="grande__img" sr="#">
-            <img  alt="Imagen 2" class="grande__img" sr="#">
-            <img  alt="Imagen 3" class="grande__img" sr="#">
-            <img  alt="Imagen 4" class="grande__img" sr="#">
+            <img  alt="escenario 1" class="grande__img" src="/src/assets/images/escenarios/escenario-personaje-segundo-formato.jpg">
+            <img  alt="escenario 2" class="grande__img" src="/src/assets/images/escenarios/escenariovictorpng.png">
+            <img  alt="escenario 3" class="grande__img" src="/src/assets/images/escenarios/otroescenario.png">
+            <img  alt="escenario 4" class="grande__img" src="/src/assets/images/escenarios/escenarioTerminado.png">
           </div>
 
           <ul class="carrusel__puntos">
@@ -97,8 +107,8 @@
     </section>
   </main>
   <footer class="footer">
-    <p>footer</p>
-    <img src="./assets/imagenes/logo/EB_logo_png.png" class="footer__logo" />
+    <img src="./assets/images/logo/EB_logo_png.png" class="footer__logo" />
+    <p class="footer__titulo">ENERGY BOTS</p>
   </footer>
 </body>
 </html>

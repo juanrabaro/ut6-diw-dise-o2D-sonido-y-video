@@ -9,23 +9,25 @@
         position: absolute;
         margin-top: 0px;
         margin-bottom: 0px;
-        left: 15px;
+        left: 40px;
         top: 30px;
-        height: 50px;
+        height: 70px;
     }
     .header__navegador {
         display: flex;
-        gap: 15px;
+        gap: 25px;
         justify-content: center;
-        padding-top: 40px;
+        padding-top: 48px;
 
         a {
             border: 1px black solid;
             border-radius: 10px;
-            background-color: gray;
-            padding: 8px;
+            background-color: $gris;
+            padding: 12px;
             text-decoration: none;
             box-shadow: 2px 2px black;
+
+            font-family: $fuenteTitulo;
         }
         a:hover {
             background-color: $amarillo;

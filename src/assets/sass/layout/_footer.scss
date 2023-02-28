@@ -1,11 +1,20 @@
 .footer {
     background-color: $rojo;
     width: 100%;
-    margin-top: 50px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    //margin-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    position: relative;
 
     .footer__logo {
-        height: 100px;
+        height: 70px;
+        padding-left: 40px;
+    }
+    .footer__titulo {
+        position: absolute;
+        left: 43%;
+        top: 20px;
+        font-size: 30px;
+        font-family: $fuenteTitulo;
     }
 }

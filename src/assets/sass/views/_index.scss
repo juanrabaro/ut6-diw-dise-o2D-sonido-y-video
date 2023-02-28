@@ -8,6 +8,9 @@
         padding-top: 70px;
         padding-bottom: 70px;
         border-top: 4px solid black;
+
+        font-family: $fuenteTitulo;
+        font-size: 40px;
     }
     .main__principal {
         display: flex;
@@ -16,9 +19,10 @@
         // ACORDEON
         .principal__funcionamiento {
             @include main-sections;
-            height: 520px;
+            height: 550px;
             border-top: 4px solid black;
             border-bottom: 4px solid black;
+            font-family: $fuenteTitulo;
             
             .funcionamiento__acordeon {
                 //width: 90%;
@@ -56,6 +60,8 @@
                 //border: 1px solid black;
                 transition: all .5s ease;
                 text-align: center;
+
+                font-family: $fuenteTexto;
             }
         
             .funcionamiento__acordeon .acordeon__bloque.activo .bloque__contenido {
@@ -68,8 +74,9 @@
         .principal__personajes {
             @include main-sections;
             width: 100%;
-            height: 500px;
+            height: 570px;
             border-bottom: 4px solid black;
+            font-family: $fuenteTitulo;
             
             .personajes__contenedor {
                 width: 100%;
@@ -116,24 +123,28 @@
             .personajes__contenedor .subcontenedor__bloque {
                 //background-color: lightseagreen;
                 opacity: 0;
-                
-                
                 position: absolute;
-                top: 0;
+                top: 20px;
                 transition: all .5s ease;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
                 align-items: center;
+                gap: 0px;
                 width: 100%;
+                font-family: $fuenteTexto;
 
-                img {
-                    width: 400px;
-                }
+            }
+            .subcontenedor__bloque .bloque__acompañante{
+                width: 200px;
+                height: 300px;
+            }
+            .subcontenedor__bloque .bloque__comun{
+                width: 400px;
+                height: 300px;
             }
             .personajes__contenedor .subcontenedor__bloque.activo {
                 opacity: 1;
-                margin-left: -30px;
             }
         }
 
@@ -142,11 +153,12 @@
         .principal__escenarios {
             @include main-sections;
             border-bottom: 4px solid black;
+            font-family: $fuenteTitulo;
 
             .escenarios__carrusel {
                 //width: 90%;
                 //max-width: 120em;
-                padding: 2em;
+                //padding: 2em;
                 display: block;
                 margin: 0 auto;
             }
@@ -163,11 +175,12 @@
             }
             .escenarios__carrusel .grande__img {
                 width: calc(100% / 4);
-                min-height: 10vh;
+                //min-height: 10vh;
                 border: 1px solid black;
+                height: 550px;
             }
             .escenarios__carrusel .carrusel__puntos {
-                width: 100%;
+                width: 90%;
                 //padding: .4em;
                 display: flex;
                 flex-flow: row nowrap;
@@ -183,6 +196,7 @@
                 padding-right: 30px;
                 background-color: $rojo;
                 box-shadow: 2px 2px 5px black;
+                margin: 0 auto;
             }
             .escenarios__carrusel .puntos__punto {
                 width: 2em;
@@ -202,6 +216,7 @@
         .principal__multimedia {
             @include main-sections;
             border-bottom: 4px solid black;
+            font-family: $fuenteTitulo;
         }
     }
 }
