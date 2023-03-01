@@ -70,13 +70,17 @@
         }
 
 
-        //TABS
+        // TABS
         .principal__personajes {
             @include main-sections;
             width: 100%;
-            height: 570px;
+            height: 650px;
             border-bottom: 4px solid black;
             font-family: $fuenteTitulo;
+            
+            h2 {
+                margin-bottom: 60px;
+            }
             
             .personajes__contenedor {
                 width: 100%;
@@ -148,7 +152,7 @@
         }
 
 
-        //CARRUSEL
+        // CARRUSEL
         .principal__escenarios {
             @include main-sections;
             border-bottom: 4px solid black;
@@ -175,8 +179,11 @@
             .escenarios__carrusel .grande__img {
                 width: calc(100% / 4);
                 //min-height: 10vh;
-                border: 1px solid black;
+                //border: 1px solid black;
                 height: 550px;
+                //border: 1px solid black;
+                border-radius: 25px;
+                box-shadow: 2px 2px 5px black;
             }
             .escenarios__carrusel .carrusel__puntos {
                 width: 90%;
@@ -211,11 +218,44 @@
         }
 
 
-        //NO HE
+        // MULTIMEDIA
         .principal__multimedia {
             @include main-sections;
             border-bottom: 4px solid black;
             font-family: $fuenteTitulo;
+
+            .multimedia__efectossonido {
+                text-align: center;
+                margin-top: 80px;
+
+                audio {
+                    border: 1px solid black;
+                    border-radius: 25px;
+                    box-shadow: 2px 2px 5px black;
+                    margin: 10px;
+                }
+            }
+            .multimedia__musica {
+                text-align: center;
+                margin-top: 60px;
+
+                audio {
+                    border: 1px solid black;
+                    border-radius: 25px;
+                    box-shadow: 2px 2px 5px black;
+                    margin: 10px;
+                }
+            }
+            .multimedia__video {
+                text-align: center;
+                margin-top: 60px;
+
+                video {
+                    height: 360px;
+                    border-radius: 25px;
+                    box-shadow: 2px 2px 5px black;
+                }
+            }
         }
     }
 }

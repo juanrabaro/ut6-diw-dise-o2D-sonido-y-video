@@ -84,10 +84,15 @@
         <h2>LOS ESCENARIOS</h2>
         <div class="escenarios__carrusel">
           <div class="carrusel__grande" id="carrusel__grande">
+            <!-- <picture class="grande__img">
+              <source media="(max-width: 799px)" srcset="/src/assets/images/escenarios/escenario-personaje-segundo-formato.jpg">
+              <source media="(min-width: 800px)" srcset="/src/assets/images/escenarios/escenario-personaje-segundo-formato.jpg">
+              <img src="/src/assets/images/escenarios/escenario-personaje-segundo-formato.jpg" alt="Chris standing up holding his daughter Elva">
+            </picture> -->
             <img  alt="escenario 1" class="grande__img" src="/src/assets/images/escenarios/escenario-personaje-segundo-formato.jpg">
-            <img  alt="escenario 2" class="grande__img" src="/src/assets/images/escenarios/escenariovictorpng.png">
-            <img  alt="escenario 3" class="grande__img" src="/src/assets/images/escenarios/escenario-guille-cambio-2.png">
-            <img  alt="escenario 4" class="grande__img" src="/src/assets/images/escenarios/escenarioTerminado.png">
+            <img alt="escenario 2" class="grande__img" src="/src/assets/images/escenarios/escenariovictorpng.png">
+            <img alt="escenario 3" class="grande__img" src="/src/assets/images/escenarios/escenario-guille-cambio-2.png">
+            <img alt="escenario 4" class="grande__img" src="/src/assets/images/escenarios/escenarioTerminado.png">
           </div>
 
           <ul class="carrusel__puntos">
@@ -100,11 +105,22 @@
       </section>
 
 
-      <!-- NO HE -->
+      <!-- MULTIMEDIA -->
       <section name="principal__multimedia" id="principal__multimedia" class="principal__multimedia">
         <h2>VIDEO Y AUDIOS</h2>
-        <audio src="/src/assets/audios/efecto.mp3" preload="none" controls></audio>
-        <video src="/src/assets/video/videoCiudadFuturista.mp4" width="640" height="480" controls></video>
+        <div class="multimedia__efectossonido">
+          <h3>EFECTOS DE SONIDO</h3>
+          <audio src="/src/assets/audios/efecto.mp3" controls></audio>
+          <audio src="/src/assets/audios/movimientoRobot.mp3" controls></audio>
+        </div>
+        <div class="multimedia__musica">
+          <h3>MÚSICA</h3>
+          <audio src="/src/assets/audios/musica.mp3" controls></audio>
+        </div>
+        <div class="multimedia__video">
+          <h3>VIDEO</h3>
+          <video src="/src/assets/video/videoCiudadFuturista.mp4" width="640" height="480" controls></video>
+        </div>
       </section>
     </section>
   </main>
