@@ -12,6 +12,12 @@
         left: 40px;
         top: 30px;
         height: 70px;
+
+        border: 1px black solid;
+        border-radius: 20px;
+        background-color: $gris;
+        padding: 5px;
+        box-shadow: 2px 2px black;
     }
     .header__navegador {
         display: flex;

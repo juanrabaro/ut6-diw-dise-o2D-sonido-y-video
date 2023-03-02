@@ -8,7 +8,13 @@
 
     .footer__logo {
         height: 70px;
-        padding-left: 40px;
+        margin-left: 40px;
+
+        border: 1px black solid;
+        border-radius: 20px;
+        background-color: $gris;
+        padding: 5px;
+        box-shadow: 2px 2px black;
     }
     .footer__titulo {
         position: absolute;

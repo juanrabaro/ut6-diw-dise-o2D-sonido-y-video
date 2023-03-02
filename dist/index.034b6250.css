@@ -33,7 +33,7 @@ body {
 .main .main__principal .principal__funcionamiento {
   width: 100%;
   height: 550px;
-  background-color: #cacaca;
+  background-color: #9b9b9b;
   border: 4px solid #000;
   border-width: 4px 1px;
   padding-top: 30px;
@@ -68,7 +68,7 @@ body {
 }
 
 .main .main__principal .principal__funcionamiento .funcionamiento__acordeon .bloque__h3:hover {
-  background-color: #e6de0f;
+  background-color: #eef0a1;
   transition: all .4s;
 }
 
@@ -89,7 +89,7 @@ body {
   width: 100%;
   width: 100%;
   height: 650px;
-  background-color: #cacaca;
+  background-color: #9b9b9b;
   border: 1px solid #000;
   border-bottom-width: 4px;
   padding-top: 30px;
@@ -109,6 +109,7 @@ body {
 
 .main .main__principal .principal__personajes .personajes__contenedor .contenedor__ul {
   width: 100%;
+  justify-content: center;
   display: flex;
 }
 
@@ -127,7 +128,7 @@ body {
 }
 
 .main .main__principal .principal__personajes .personajes__contenedor .ul__li.activo {
-  background-color: #e6de0f;
+  background-color: #eef0a1;
 }
 
 .main .main__principal .principal__personajes .personajes__contenedor .contenedor__subcontenedor {
@@ -141,6 +142,7 @@ body {
   flex-flow: column wrap;
   align-items: center;
   gap: 0;
+  margin-left: 0;
   font-family: Lato;
   transition: all .5s;
   display: flex;
@@ -164,7 +166,7 @@ body {
 
 .main .main__principal .principal__escenarios {
   width: 100%;
-  background-color: #cacaca;
+  background-color: #9b9b9b;
   border: 1px solid #000;
   border-bottom-width: 4px;
   padding-top: 30px;
@@ -227,12 +229,12 @@ body {
 }
 
 .main .main__principal .principal__escenarios .escenarios__carrusel .puntos__punto.activo {
-  background-color: #e6de0f;
+  background-color: #eef0a1;
 }
 
 .main .main__principal .principal__multimedia {
   width: 100%;
-  background-color: #cacaca;
+  background-color: #9b9b9b;
   border: 1px solid #000;
   border-bottom-width: 4px;
   padding-top: 30px;
@@ -289,11 +291,16 @@ body {
 
 .header .header__logo {
   height: 70px;
+  background-color: #9b9b9b;
+  border: 1px solid #000;
+  border-radius: 20px;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 5px;
   position: absolute;
   top: 30px;
   left: 40px;
+  box-shadow: 2px 2px #000;
 }
 
 .header .header__navegador {
@@ -304,7 +311,7 @@ body {
 }
 
 .header .header__navegador a {
-  background-color: #cacaca;
+  background-color: #9b9b9b;
   border: 1px solid #000;
   border-radius: 10px;
   padding: 12px;
@@ -314,7 +321,7 @@ body {
 }
 
 .header .header__navegador a:hover {
-  background-color: #e6de0f;
+  background-color: #eef0a1;
   transition: all .4s;
 }
 
@@ -328,7 +335,12 @@ body {
 
 .footer .footer__logo {
   height: 70px;
-  padding-left: 40px;
+  background-color: #9b9b9b;
+  border: 1px solid #000;
+  border-radius: 20px;
+  margin-left: 40px;
+  padding: 5px;
+  box-shadow: 2px 2px #000;
 }
 
 .footer .footer__titulo {

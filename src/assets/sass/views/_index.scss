@@ -90,14 +90,16 @@
                 //padding: 1em;
                 //display: block;
                 //margin: 0 auto;
+                //margin-left: 30px;
             }
             .personajes__contenedor .contenedor__ul {
                 width: 100%;
                 //background-color: lightblue;
                 display: flex;
                 //flex-flow: row nowrap;
-                //justify-content : space-between;
+                justify-content : center;
                 //align-items: center;
+                //margin-left: -40px;
             }
             .personajes__contenedor .ul__li {
                 background-color: $rojo;
@@ -137,6 +139,7 @@
                 gap: 0px;
                 width: 100%;
                 font-family: $fuenteTexto;
+                margin-left: 0px;
             }
             .subcontenedor__bloque .bloque__acompañante{
                 width: 200px;
