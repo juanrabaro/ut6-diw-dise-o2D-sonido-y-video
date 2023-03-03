@@ -3,14 +3,40 @@
 
     .main__titulo {
         text-align: center;   
-        margin-top: 50px;
-        margin-bottom: 0px;
+        height: 600px;
+        margin-bottom: 140px;
         padding-top: 70px;
         padding-bottom: 70px;
-        border-top: 4px solid black;
 
         font-family: $fuenteTitulo;
         font-size: 40px;
+        
+        position: relative;
+        
+        h1 {
+            top: 130px;
+            position: relative;
+            z-index: 1;
+            background-color: $rojo;
+            padding: 5px;
+            width: 600px;
+            margin: 0 auto;
+            border: 1px black solid;
+            border-radius: 20px;
+            padding: 5px;
+            box-shadow: 2px 2px black;
+            margin-top: 125px;
+        }
+        video {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            height: 620px;
+            margin-top: 125px;
+            border-bottom: 4px solid black;
+        }
     }
     .main__principal {
         display: flex;

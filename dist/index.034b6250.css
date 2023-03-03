@@ -16,13 +16,37 @@ body {
 
 .main .main__titulo {
   text-align: center;
-  border-top: 4px solid #000;
-  margin-top: 50px;
-  margin-bottom: 0;
+  height: 600px;
+  margin-bottom: 140px;
   padding-top: 70px;
   padding-bottom: 70px;
   font-family: Fredoka One;
   font-size: 40px;
+  position: relative;
+}
+
+.main .main__titulo h1 {
+  z-index: 1;
+  width: 600px;
+  background-color: #b04747;
+  border: 1px solid #000;
+  border-radius: 20px;
+  margin: 125px auto 0;
+  padding: 5px;
+  position: relative;
+  top: 130px;
+  box-shadow: 2px 2px #000;
+}
+
+.main .main__titulo video {
+  width: 100%;
+  object-fit: cover;
+  height: 620px;
+  border-bottom: 4px solid #000;
+  margin-top: 125px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .main .main__principal {
@@ -366,10 +390,14 @@ body {
 
 .header {
   width: 100%;
+  z-index: 2;
   background-color: #b04747;
+  border-bottom: 2px solid #000;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
+  position: fixed;
 }
 
 .header .header__logo {
