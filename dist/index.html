@@ -89,7 +89,12 @@
               <source media="(min-width: 800px)" srcset="/src/assets/images/escenarios/escenario-personaje-segundo-formato.jpg">
               <img src="/src/assets/images/escenarios/escenario-personaje-segundo-formato.jpg" alt="Chris standing up holding his daughter Elva">
             </picture> -->
-            <img alt="escenario 1" class="grande__img" src="/escenario-personaje-segundo-formato.d4988631.jpg">
+
+
+            <!-- <img  alt="escenario 1" class="grande__img" src="/src/assets/images/escenarios/escenario-personaje-segundo-formato.jpg"> -->
+            <img srcset="/escenario-personaje-segundo-formatopaintpequeño.61113e16.png 720w, /escenario-personaje-segundo-formatopaintmediano.ef13129d.png 1080w, /escenario-personaje-segundo-formatopaint.63442a9c.png 1280w" sizes="(max-width: 700px) 280px,
+                          (max-width: 800px) 440px,
+                          900px" src="/escenario-personaje-segundo-formato.d4988631.jpg" alt="prueba">
             <img alt="escenario 2" class="grande__img" src="/escenariovictorpng.1e5bfa4f.png">
             <img alt="escenario 3" class="grande__img" src="/escenario-guille-cambio-2.2d64023f.png">
             <img alt="escenario 4" class="grande__img" src="/escenarioTerminado.1b47c2dc.png">
@@ -110,8 +115,18 @@
         <h2>VIDEO Y AUDIOS</h2>
         <div class="multimedia__efectossonido">
           <h3>EFECTOS DE SONIDO</h3>
-          <audio src="/efecto.37ef3dac.mp3" controls=""></audio>
-          <audio src="/movimientoRobot.d4f39e3c.mp3" controls=""></audio>
+          <!-- <audio src="/src/assets/audios/efecto.mp3" controls></audio> -->
+          <!-- <audio src="/src/assets/audios/movimientoRobot.mp3" controls></audio> -->
+          <audio controls="">
+            <source src="/efecto.37ef3dac.mp3">
+            <source src="/efecto.7ed67a77.ogg">
+            <source src="/efecto.04ab6d26.wav">
+          </audio>
+          <audio controls="">
+            <source src="/movimientoRobot.d4f39e3c.mp3">
+            <source src="/movimientoRobot.f0b5352c.ogg">
+            <source src="/movimientoRobot.90b321e7.wav">
+          </audio>
         </div>
         <div class="multimedia__musica">
           <h3>MÚSICA</h3>

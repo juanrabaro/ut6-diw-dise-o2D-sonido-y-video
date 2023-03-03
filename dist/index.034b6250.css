@@ -344,41 +344,6 @@ body {
   }
 }
 
-@media screen and (max-width: 850px) {
-  .main .main__principal .principal__escenarios .escenarios__carrusel .carrusel__grande .grande__img {
-    height: 500px;
-    transition-duration: .6s;
-  }
-}
-
-@media screen and (max-width: 670px) {
-  .main .main__principal .principal__escenarios .escenarios__carrusel .carrusel__grande .grande__img {
-    height: 430px;
-    transition-duration: .6s;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .main .main__principal .principal__escenarios .escenarios__carrusel .carrusel__grande .grande__img {
-    height: 380px;
-    transition-duration: .6s;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  .main .main__principal .principal__escenarios .escenarios__carrusel .carrusel__grande .grande__img {
-    height: 300px;
-    transition-duration: .6s;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .main .main__principal .principal__escenarios .escenarios__carrusel .carrusel__grande .grande__img {
-    height: 200px;
-    transition-duration: .6s;
-  }
-}
-
 @media screen and (max-width: 690px) {
   .main .main__principal .principal__multimedia .multimedia__video video {
     width: 500px;
